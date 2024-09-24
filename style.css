@@ -13,6 +13,9 @@ html{
 .container{
     display: flex;
     flex-direction: column;
+    height: 300px;
+    width: 200px;
+    /* max-height: 400px; */
     justify-content: center;
     padding-top: 200px;
     padding-left: 45%;
@@ -36,4 +39,33 @@ input{
     color: rgb(10, 9, 9);
     font-weight: bolder;
     background-color: rgb(201, 156, 228);
+}
+#add-btn:hover{
+    background-color: rgb(93, 9, 141);
+    color: white;
+    cursor: pointer;
+}
+.completed{
+    text-decoration: line-through;
+    color: rgb(36, 33, 33);
+}
+.rm-btn{
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color:  rgb(201, 156, 228);
+    margin-left: 100px;
+}
+#list{
+    margin-top: 30px;
+    list-style-type: style type none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.rm-btn:hover{
+    cursor: pointer;
+    background-color: rgb(236, 14, 14);
+    color: white;
+}
+.li{
+    color: white;
 }
