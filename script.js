@@ -2,6 +2,9 @@ function addTask(){
     var input = document.getElementById("input")
     var list = document.getElementById("list")
     var li = document.createElement('li')
+    if (!input.value.trim()) {
+        return alert("Todo can't be empty!")
+    }
     li.textContent = input.value
     li.className = "li"
     var removeBtn = document.createElement('button')
