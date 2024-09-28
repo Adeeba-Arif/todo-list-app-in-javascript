@@ -8,7 +8,7 @@ body{
     background-size: cover;
 }
 html{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
 }
 .container{
     display: flex;
