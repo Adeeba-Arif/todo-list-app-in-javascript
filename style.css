@@ -24,6 +24,7 @@ html{
     font-size: larger;
     color: white;
 }
+
 input{
     padding-left: 10px;
     width: 250px;
@@ -50,28 +51,41 @@ input{
     text-decoration: line-through;
     color: grey;
 }
-.rm-btn{
-    padding: 5px 5px;
+.rm-btn {
+    padding: 5px 10px;
     border-radius: 5px;
-    background-color:  rgb(201, 156, 228);
-    margin-left: 100px;
+    background-color: rgb(201, 156, 228);
+    color: black;
+    font-size: small;
+    border: none;
+    transition: all 0.3s ease;
 }
-#list{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    list-style-type: none;
-    max-height: 200px;
-    overflow-y: auto;
-}
-.rm-btn:hover{
+
+.rm-btn:hover {
     cursor: pointer;
     background-color: rgb(236, 14, 14);
     color: white;
+    transform: scale(1.1);
 }
-.li{
+
+/* Update for better alignment within the list */
+#list li {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#list {
     color: white;
+    max-width: 300px; /* Adjust max-width as per the container size */
+    overflow-y: auto;
 }
+
 /*  adjustment 320px */
 /* @media(max-width:320px){
     body{

@@ -20,3 +20,4 @@ function addTask(){
     list.appendChild(li)
     input.value = ""
 }
+
